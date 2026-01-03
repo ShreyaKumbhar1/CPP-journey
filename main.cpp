@@ -1,36 +1,39 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-    char color [20];
-    char name [30];
-    char occupation [30];
-    char noun [20];
-    char verb [20];
-    char gender [20];
-    char store [20];
+    double num1,num2;
+    char op;
+    double result;
 
-    cout<<"Enter a color: ";
-    cin>>color;
-    cout<<"Enter any name: ";
-    cin>>name;
-    cout<<"Enter any occupation: ";
-    cin>>occupation;
-    cout<<"Enter any noun: ";
-    cin>>noun;
-    cout<<"Enter a verb: ";
-    cin>>verb;
-    cout<<"Enter any gender: ";
-    cin>>gender;
-    cout<<"Enter a store name: ";
-    cin>>store;
+    cout<<"Simple Calculator...!"<<endl;
+    cout<<"Enter the first number: ";
+    cin>>num1;
+    cout<<"Enter the second number: ";
+    cin>>num2;
+    cout<<"Enter the operation that you want to perform(+,-,/,*): ";
+    cin>>op;
 
-    cout<<name<<" was very hardworking "<<occupation<<"."<<endl;
-    cout<<"His hair were "<<color<<"."<<endl;
-    cout<<"He had a bad habit of stealing "<<noun<<" from "<<store<<"."<<endl;
-    cout<<"His favorite activity was "<<verb<< " with "<<gender<<"s."<<endl;
+    if(op=='+'){
+        result=num1+num2;
+    }
+    else if(op=='-'){
+        result=num1-num2;
+    }
+    else if(op=='/'){
+        result=num1/num2;
+    }
+    else if(op=='*'){
+        result=num1*num2;
+    }
+    else{
+        cout<<"It is not valid...!"<<endl;
+    }
+    cout<<"Result: "<<result<<endl;
 
+    cout<<"Thank You for visiting...!"<<endl;
 
     return 0;
 }
